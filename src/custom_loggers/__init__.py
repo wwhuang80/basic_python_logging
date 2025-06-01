@@ -1,3 +1,5 @@
-from custom_loggers import SQLiteHandler
+__all__ = ["SQLiteHandler", "logger_namespace"]
 
-__all__ = ["SQLiteHandler"]
+from .sqlite_logger import SQLiteHandler
+from . import logger_namespace
+
