@@ -14,8 +14,6 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    strategy:
-      matrix: [py312]
     steps:
     - uses: actions/checkout@v4
 
@@ -26,10 +24,9 @@ jobs:
 #        python-version: '3.13'
 #       cache: pip # Implicitly uses requirements.txt for cache key
       
-    - name: 
+    - name: set-up-pixi 
       uses: prefix-dev/setup-pixi@v0.8.8
-      with:
-        environments: ${{ matrix.environment }}
+  
     - name: Install dependencies
       run: pixi install
 
