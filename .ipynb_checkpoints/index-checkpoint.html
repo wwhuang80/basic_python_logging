@@ -7539,12 +7539,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
@@ -7553,7 +7553,7 @@ a.anchor-link {
 <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
 <span class="c1"># To set up the root logger to send the logs to a file</span>
-<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">"log.txt"</span><span class="p">,</span> <span class="n">filemode</span><span class="o">=</span><span class="s2">"a"</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span> 
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">"basic_config_log.txt"</span><span class="p">,</span> <span class="n">filemode</span><span class="o">=</span><span class="s2">"a"</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span> 
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Logging to a file..."</span><span class="p">)</span> 
 
 <span class="c1"># To set up the root logger to send the logs to the console</span>
@@ -7561,19 +7561,6 @@ a.anchor-link {
 <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">stream</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># force param needed to reconfigure</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Logging to the stdout stream"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>INFO:__main__:Logging to the stdout stream
-</pre>
 </div>
 </div>
 </div>
@@ -7630,31 +7617,17 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">logger</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="s2">"logging an error message"</span><span class="p">)</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">"logging another error message"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>ERROR:__main__:logging an error message
-ERROR:__main__:logging another error message
-</pre>
 </div>
 </div>
 </div>
@@ -7677,32 +7650,18 @@ ERROR:__main__:logging another error message
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">custom_loggers</span><span class="w"> </span><span class="kn">import</span> <span class="n">logger_namespace</span>
 <span class="n">logger_namespace</span><span class="o">.</span><span class="n">create_logger_with_name</span><span class="p">()</span>
 <span class="n">logger_namespace</span><span class="o">.</span><span class="n">create_logger_without_name</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>INFO:Not using default namespace:This entry is created with a logger with a custom name
-INFO:custom_loggers.logger_namespace:This entry is created with a logger without a custom name
-</pre>
 </div>
 </div>
 </div>
@@ -7727,12 +7686,12 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">logger1</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">"same logger"</span><span class="p">)</span>
@@ -7740,19 +7699,6 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"is logger1  also logger2? </span><span class="si">{</span><span class="n">logger1</span><span class="w"> </span><span class="ow">is</span><span class="w"> </span><span class="n">logger2</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>INFO:__main__:is logger1  also logger2? True
-</pre>
 </div>
 </div>
 </div>
@@ -7781,12 +7727,12 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=10">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=10">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="nb">print</span> <span class="k">as</span> <span class="n">rprint</span>
@@ -7795,31 +7741,6 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 <span class="n">rprint</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">_handlerList</span><span class="p">)</span>
 <span class="n">rprint</span><span class="p">(</span><span class="n">logger1</span><span class="o">.</span><span class="n">handlers</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">[</span>
-    <span style="font-weight: bold">&lt;</span><span style="color: #ff00ff; text-decoration-color: #ff00ff; font-weight: bold">weakref</span><span style="color: #000000; text-decoration-color: #000000"> at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x10555f830</span><span style="color: #000000; text-decoration-color: #000000">; to </span><span style="color: #008000; text-decoration-color: #008000">'logging.StreamHandler'</span><span style="color: #000000; text-decoration-color: #000000"> at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x1054def90</span><span style="color: #000000; text-decoration-color: #000000">&gt;,</span>
-<span style="color: #000000; text-decoration-color: #000000">    &lt;weakref at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x105577c90</span><span style="color: #000000; text-decoration-color: #000000">; to </span><span style="color: #008000; text-decoration-color: #008000">'logging.StreamHandler'</span><span style="color: #000000; text-decoration-color: #000000"> at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x103d2a210</span><span style="color: #000000; text-decoration-color: #000000">&gt;,</span>
-<span style="color: #000000; text-decoration-color: #000000">    &lt;weakref at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x105575c10</span><span style="color: #000000; text-decoration-color: #000000">; to </span><span style="color: #008000; text-decoration-color: #008000">'logging.StreamHandler'</span><span style="color: #000000; text-decoration-color: #000000"> at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x1059b3250</span><span style="color: #000000; text-decoration-color: #000000">&gt;,</span>
-<span style="color: #000000; text-decoration-color: #000000">    &lt;weakref at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x105baf150</span><span style="color: #000000; text-decoration-color: #000000">; to </span><span style="color: #008000; text-decoration-color: #008000">'logging.StreamHandler'</span><span style="color: #000000; text-decoration-color: #000000"> at </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0x105bcc8a0</span><span style="font-weight: bold">&gt;</span>
-<span style="font-weight: bold">]</span>
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">[&lt;</span><span style="color: #ff00ff; text-decoration-color: #ff00ff; font-weight: bold">StreamHandler</span><span style="color: #000000; text-decoration-color: #000000"> stderr </span><span style="color: #000000; text-decoration-color: #000000; font-weight: bold">(</span><span style="color: #000000; text-decoration-color: #000000">NOTSET</span><span style="color: #000000; text-decoration-color: #000000; font-weight: bold">)</span><span style="font-weight: bold">&gt;]</span>
-</pre>
 </div>
 </div>
 </div>
@@ -7842,12 +7763,12 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=12">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=12">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">stream</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
@@ -7857,19 +7778,6 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">"This message will not emit."</span><span class="p">)</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"This message will emit."</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>INFO:root:This message will emit.
-</pre>
 </div>
 </div>
 </div>
@@ -7896,12 +7804,12 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=14">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=14">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
@@ -7911,19 +7819,6 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">handlers</span><span class="o">=</span><span class="p">[</span><span class="n">handler</span><span class="p">])</span> 
 <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"This message uses the specified format"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{{DEBUG}} 2025-06-02: This message uses the specified format
-</pre>
 </div>
 </div>
 </div>
@@ -7944,12 +7839,12 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=16">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=16">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">custom_loggers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SQLiteHandler</span>
@@ -7967,19 +7862,6 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"This message will go to the console"</span><span class="p">)</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"This message will go to a sqlite3 db file"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>DEBUG:root:This message will go to the console
-</pre>
 </div>
 </div>
 </div>
@@ -8006,12 +7888,12 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=19">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=19">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">rich.logging</span><span class="w"> </span><span class="kn">import</span> <span class="n">RichHandler</span>
@@ -8021,19 +7903,6 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">"rich"</span><span class="p">)</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Add [bold cyan]rich text[/] support with the RichHandler from the [bold red]rich[/] package."</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="p">{</span><span class="s2">"markup"</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7fbfbf; text-decoration-color: #7fbfbf">[18:17:03] </span><span style="color: #000080; text-decoration-color: #000080">INFO    </span> Add <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">rich text</span> support with the RichHandler from the <span style="color: #800000; text-decoration-color: #800000; font-weight: bold">rich</span> package.               <a href="file:///var/folders/h5/10cy3jv13kx46x2mg4gsffdw0000gp/T/ipykernel_3258/2679340856.py" target="_blank"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">2679340856.py</span></a><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">:</span><a href="file:///var/folders/h5/10cy3jv13kx46x2mg4gsffdw0000gp/T/ipykernel_3258/2679340856.py#6" target="_blank"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">6</span></a>
-</pre>
 </div>
 </div>
 </div>
@@ -8049,30 +7918,17 @@ INFO:custom_loggers.logger_namespace:This entry is created with a logger without
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=21">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=21">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">loguru</span><span class="w"> </span><span class="kn">import</span> <span class="n">logger</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Logging is easy with loguru"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre><span class="ansi-green-fg">2025-06-02 18:17:03.091</span> | <span class="ansi-bold">INFO    </span> | <span class="ansi-cyan-fg">__main__</span>:<span class="ansi-cyan-fg">&lt;module&gt;</span>:<span class="ansi-cyan-fg">2</span> - <span class="ansi-bold">Logging is easy with loguru</span>
-</pre>
 </div>
 </div>
 </div>
@@ -8096,33 +7952,18 @@ pixi<span class="w"> </span>run<span class="w"> </span>cli_logger<span class="w"
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=23">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=23">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span>%%bash<span class="w"> </span>
 pixi<span class="w"> </span>run<span class="w"> </span>cli_logger
 pixi<span class="w"> </span>run<span class="w"> </span>cli_logger<span class="w"> </span>--debug
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre><span class="ansi-cyan-fg">[06/02/25 18:17:03]</span><span class="ansi-cyan-fg"> </span><span class="ansi-blue-fg">INFO    </span> cli_logger <span class="ansi-cyan-intense-fg ansi-bold">2025</span>-<span class="ansi-cyan-intense-fg ansi-bold">06</span>-<span class="ansi-cyan-intense-fg ansi-bold">02</span> <span class="ansi-green-intense-fg ansi-bold">18:17:03</span>,<span class="ansi-cyan-intense-fg ansi-bold">440</span>: this is an info log record                                                                                                                                                     ]8;id=782113;file:///Users/gram/projects/basic_python_logging/src/custom_loggers/cli_logger.py\cli_logger.py]8;;\:]8;id=225144;file:///Users/gram/projects/basic_python_logging/src/custom_loggers/cli_logger.py#41\41]8;;\
-<span class="ansi-cyan-fg">[06/02/25 18:17:03]</span><span class="ansi-cyan-fg"> </span><span class="ansi-blue-fg">INFO    </span> cli_logger <span class="ansi-cyan-intense-fg ansi-bold">2025</span>-<span class="ansi-cyan-intense-fg ansi-bold">06</span>-<span class="ansi-cyan-intense-fg ansi-bold">02</span> <span class="ansi-green-intense-fg ansi-bold">18:17:03</span>,<span class="ansi-cyan-intense-fg ansi-bold">773</span>: this is an info log record                                                                                                                                                     ]8;id=601949;file:///Users/gram/projects/basic_python_logging/src/custom_loggers/cli_logger.py\cli_logger.py]8;;\:]8;id=619698;file:///Users/gram/projects/basic_python_logging/src/custom_loggers/cli_logger.py#41\41]8;;\
-<span class="ansi-cyan-fg">                   </span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">DEBUG   </span> cli_logger <span class="ansi-cyan-intense-fg ansi-bold">2025</span>-<span class="ansi-cyan-intense-fg ansi-bold">06</span>-<span class="ansi-cyan-intense-fg ansi-bold">02</span> <span class="ansi-green-intense-fg ansi-bold">18:17:03</span>,<span class="ansi-cyan-intense-fg ansi-bold">775</span>: this is a debug message                                                                                                                                                        ]8;id=136268;file:///Users/gram/projects/basic_python_logging/src/custom_loggers/cli_logger.py\cli_logger.py]8;;\:]8;id=514226;file:///Users/gram/projects/basic_python_logging/src/custom_loggers/cli_logger.py#42\42]8;;\
-</pre>
 </div>
 </div>
 </div>
