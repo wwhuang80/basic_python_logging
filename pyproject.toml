@@ -9,6 +9,9 @@ version = "0.1.0"
 tests = ["pytest", "hypothesis"]
 format = ["ruff", "nbstripout"]
 
+[project.scripts]
+cli_logger = "custom_loggers.cli_logger:main"
+
 [build-system]
 build-backend = "hatchling.build"
 requires = ["hatchling"]
@@ -34,6 +37,7 @@ hypothesis = ">=6.132.0,<7"
 rich = ">=14.0.0,<15"
 jupyterlab = ">=4.4.3,<5"
 loguru = ">=0.7.3,<0.8"
+jupyterlab-spellchecker = ">=0.8.4,<0.9"
 
 [tool.pytest.ini_options]
 minversion = "7.0"
