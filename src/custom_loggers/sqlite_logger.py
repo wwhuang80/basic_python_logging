@@ -23,7 +23,7 @@ class SQLiteHandler(logging.Handler):
         SCHEMA = "CREATE TABLE records (id INTEGER PRIMARY KEY, record TEXT)"
         with self.lock:
             if not Path(self.fp).exists():
-                conn = sqlite3.connect(self.fp) 
+                conn = sqlite3.connect(self.fp)
                 try:
                     with conn:
                         conn.execute(
@@ -35,13 +35,14 @@ class SQLiteHandler(logging.Handler):
                     conn.close()
 
             conn = sqlite3.connect(self.fp)
-            with conn:
-                schema = conn.execute(
-                    "SELECT * from sqlite_master WHERE type='table' AND name='records';"
-                ).fetchone()
-                if not schema:
-                    raise KeyError("table not found in sqlite3 DB.")
-                elif schema[4] != SCHEMA:
-                    print(schema[4])
-                    raise KeyError("incorrect DB schema")
-            conn.close()
+            try:
+                with conn:
+                    schema = conn.execute(
+                        "SELECT * from sqlite_master WHERE type='table' AND name='records';"
+                    ).fetchone()
+                    if not schema:
+                        raise KeyError("table not found in sqlite3 DB.")
+                    elif schema[4] != SCHEMA:
+                        raise KeyError("incorrect DB schema")
+            finally:
+                conn.close()

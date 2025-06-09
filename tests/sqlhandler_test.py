@@ -5,7 +5,7 @@ import sqlite3
 import pytest
 from hypothesis import given, settings, strategies as st
 
-from python_std_logging import basic_logger
+from custom_loggers import SQLiteHandler
 
 
 @pytest.fixture(autouse=True)
@@ -20,7 +20,7 @@ def test_SQLiteHandler(text):
     fp = output_dir / "test.db"
 
     logger = logging.getLogger(__name__)
-    handler = basic_logger.SQLiteHandler(fp)
+    handler = SQLiteHandler(fp)
     logger.addHandler(handler)
     logger.critical(text)
 
